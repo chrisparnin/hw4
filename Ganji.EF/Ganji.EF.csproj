@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9F4640E-83A9-47D9-82A2-B4E309E278D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ganji.EF</RootNamespace>
+    <AssemblyName>Ganji.EF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Ganji.EF.key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.4.3.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contexts\CodingContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contexts\ExceptionsContext.cs" />
+    <Compile Include="Contexts\HistoryContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contexts\NarrativesContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contexts\RemindersContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contexts\SessionsContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\History\Commit.cs" />
+    <Compile Include="Entities\History\Resource.cs" />
+    <Compile Include="Entities\History\LastActivityEntity.cs" />
+    <Compile Include="Entities\History\SessionEntity.cs" />
+    <Compile Include="Entities\History\CommitAlignedClick.cs" />
+    <Compile Include="Entities\History\Document.cs" />
+    <Compile Include="Entities\History\DocumentTag.cs" />
+    <Compile Include="Entities\History\Search.cs" />
+    <Compile Include="Entities\Memlets\Reminder.cs" />
+    <Compile Include="Entities\Memlets\SmartReminderEntity.cs" />
+    <Compile Include="Entities\Memlets\Task.cs" />
+    <Compile Include="Entities\Memlets\Tasklet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ganji.EF.key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ganji.Contracts\Ganji.Contracts.csproj">
+      <Project>{C00CB036-C541-444D-A34D-98575B97F1CA}</Project>
+      <Name>Ganji.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

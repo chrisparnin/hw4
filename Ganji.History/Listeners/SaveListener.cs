@@ -5,10 +5,9 @@ using System.Text;
 using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
-using Ganji.EF.Entities.Artifacts;
 using Ganji.EF.Contexts;
 using Ganji.Repo;
-using Ganji.EF.Entities.Models;
+using Ganji.EF.Entities.History;
 
 namespace ninlabs.Ganji_History.Listeners
 {

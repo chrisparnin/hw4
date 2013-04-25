@@ -10,15 +10,14 @@ using System.Diagnostics;
 using Microsoft.VisualStudio;
 using System.Runtime.InteropServices;
 using Ganji.EF.Contexts;
-using Ganji.EF.Entities.Artifacts;
-using Ganji.Repo;
-using Ganji.EF.Entities.IDE;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.ComponentModelHost;
 using Microsoft.VisualStudio.Editor;
 using System.Windows.Controls;
 using System.Windows.Input;
 using EnvDTE;
+using Ganji.Repo;
+using Ganji.EF.Entities.History;
 
 namespace ninlabs.Ganji_History.Listeners
 {

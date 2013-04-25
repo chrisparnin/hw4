@@ -14,6 +14,7 @@ using Microsoft.VisualStudio.Shell;
 using ninlabs.Ganji_History.Listeners.Debugging;
 using System.Runtime.InteropServices;
 using Ganji.EF.Contexts;
+using Ganji.Contracts.Data.Memlets.Narratives;
 
 namespace ninlabs.Ganji_History.Listeners
 {
@@ -212,7 +213,7 @@ namespace ninlabs.Ganji_History.Listeners
         {
             using (var db = new ExceptionsContext())
             {
-                db.Exceptions.Add(new Ganji.Contracts.Data.Worklets.Narratives.ExceptionContract()
+                db.Exceptions.Add(new ExceptionContract()
                 {
                      Id = Guid.NewGuid().ToString(),
                      ExceptionMessage = exceptionInfo.ExceptionMessage,

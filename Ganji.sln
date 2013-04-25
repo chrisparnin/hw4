@@ -1,8 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ganji.History", "Ganji.History\Ganji.History.csproj", "{67DF6BC5-31C4-4F6D-8704-0223413CFEFE}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdParty", "ThirdParty", "{EF8CC551-432E-46BF-857B-71DB9944E81C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VisualStudio", "VisualStudio", "{F0A1C649-4965-4FE3-A1A3-3C3A812C994C}"
@@ -11,11 +9,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{9DC20827-D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{5FD311A6-B881-48C1-AACE-3BC2F3A2589C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ganji.History", "Ganji.History\Ganji.History.csproj", "{67DF6BC5-31C4-4F6D-8704-0223413CFEFE}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ganji.EF", "Ganji.EF\Ganji.EF.csproj", "{F9F4640E-83A9-47D9-82A2-B4E309E278D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ganji.Contracts", "Ganji.Contracts\Ganji.Contracts.csproj", "{C00CB036-C541-444D-A34D-98575B97F1CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ganji.Repo", "Ganji.Repo\Ganji.Repo.csproj", "{34FEC610-707E-4C7A-A529-52958FB7261D}"
+EndProject
 Global
+	GlobalSection(CodealikeProperties) = postSolution
+		SolutionGuid = 81b1fef7-a574-4971-b685-995d2ba6c38e
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -28,6 +33,7 @@ Global
 		{67DF6BC5-31C4-4F6D-8704-0223413CFEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{67DF6BC5-31C4-4F6D-8704-0223413CFEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67DF6BC5-31C4-4F6D-8704-0223413CFEFE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{67DF6BC5-31C4-4F6D-8704-0223413CFEFE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{67DF6BC5-31C4-4F6D-8704-0223413CFEFE}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{67DF6BC5-31C4-4F6D-8704-0223413CFEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67DF6BC5-31C4-4F6D-8704-0223413CFEFE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
@@ -52,6 +58,16 @@ Global
 		{C00CB036-C541-444D-A34D-98575B97F1CA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{C00CB036-C541-444D-A34D-98575B97F1CA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{C00CB036-C541-444D-A34D-98575B97F1CA}.Release|x86.ActiveCfg = Release|Any CPU
+		{34FEC610-707E-4C7A-A529-52958FB7261D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34FEC610-707E-4C7A-A529-52958FB7261D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34FEC610-707E-4C7A-A529-52958FB7261D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{34FEC610-707E-4C7A-A529-52958FB7261D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{34FEC610-707E-4C7A-A529-52958FB7261D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{34FEC610-707E-4C7A-A529-52958FB7261D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34FEC610-707E-4C7A-A529-52958FB7261D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34FEC610-707E-4C7A-A529-52958FB7261D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{34FEC610-707E-4C7A-A529-52958FB7261D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{34FEC610-707E-4C7A-A529-52958FB7261D}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

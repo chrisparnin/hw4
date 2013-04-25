@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Ganji.EF.Contexts;
-using Ganji.EF.Entities.Concepts;
 using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.VisualStudio;
 using EnvDTE;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 using System.Data.Entity;
+using Ganji.EF.Entities.History;
 
 namespace ninlabs.Ganji_History.Listeners
 {

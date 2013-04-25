@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Data.Entity;
 using Ganji.EF.Entities.History;
 using System.Data.Entity.Infrastructure;
+using System.Data.Entity;
 
 namespace Ganji.EF.Contexts
 {

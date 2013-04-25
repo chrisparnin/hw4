@@ -10,7 +10,6 @@ using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
 using Ganji.EF.Contexts;
 using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 using Ganji.Repo;
 using ninlabs.Ganji_History.Listeners;
 

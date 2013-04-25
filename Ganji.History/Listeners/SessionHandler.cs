@@ -8,8 +8,8 @@ using Microsoft.VisualStudio;
 using EnvDTE;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
-using System.Data.Entity;
 using Ganji.EF.Entities.History;
+using System.Data.Entity;
 
 namespace ninlabs.Ganji_History.Listeners
 {
